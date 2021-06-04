@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  vite: ^2.3.5
+  vite: ^2.3.6
   vite-plugin-windicss: ^1.0.1
-  windicss: ^3.1.0
+  windicss: ^3.1.1
 
 devDependencies:
   vite: 2.3.6
   vite-plugin-windicss: 1.0.1_vite@2.3.6
-  windicss: 3.1.0
+  windicss: 3.1.1
 
 packages:
 
@@ -318,6 +318,12 @@ packages:
 
   /windicss/3.1.0:
     resolution: {integrity: sha512-z49xITq4X1ltHIZyL4NwFTR2LXPJ0rbOOrhDXfLX+OfG4Au7+GAzqvNlzUfAaIbA8HSpnI04alQHUWH24KfNYA==}
+    engines: {node: '>= 12'}
+    hasBin: true
+    dev: true
+
+  /windicss/3.1.1:
+    resolution: {integrity: sha512-vLtydYOqqLwb3Jg02QYqCnna1jONLt6GuDyAtRokQY81uA8BiOyN2y3ED9QGX28CIL5Zi7bpnkBL1f1g4CHuXQ==}
     engines: {node: '>= 12'}
     hasBin: true
     dev: true

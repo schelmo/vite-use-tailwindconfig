@@ -2,7 +2,7 @@ import './style.css'
 import 'virtual:windi.css'
 
 import Processor from 'windicss'
-import windiConfig from '@windiConfig'
+import windiConfig from './windi.config.js'
 const processor = new Processor(windiConfig)
 const fullConfig = processor.allConfig
 
