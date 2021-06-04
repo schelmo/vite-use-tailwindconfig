@@ -1,8 +1,10 @@
 import './style.css'
+import 'virtual:windi.css'
 
-import resolveConfig from 'tailwindcss/resolveConfig'
-import tailwindConfig from '@tailwindConfig'
-const fullConfig = resolveConfig(tailwindConfig)
+import Processor from 'windicss'
+import windiConfig from '@windiConfig'
+const processor = new Processor(windiConfig)
+const fullConfig = processor.allConfig
 
 document.querySelector('#app').innerHTML = `
   <h1 class="text-primary font-bold text-xl">Hello Vite!</h1>
@@ -11,4 +13,4 @@ document.querySelector('#app').innerHTML = `
   ${Object.keys(fullConfig.theme.colors).join(', ')}
 `
 
-console.log(tailwindConfig, fullConfig)
+console.log(windiConfig, fullConfig, processor.interpret('bg-primary text-black').styleSheet.build())

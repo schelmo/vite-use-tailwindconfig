@@ -6,9 +6,8 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.0",
-    "tailwindcss": "^2.1.4",
-    "vite": "^2.3.5"
+    "vite": "^2.3.5",
+    "vite-plugin-windicss": "^1.0.1",
+    "windicss": "^3.1.0"
   }
 }
