@@ -1,7 +1,7 @@
 import './style.css'
 
 import resolveConfig from 'tailwindcss/resolveConfig'
-import tailwindConfig from 'tailwind.config.js'
+import tailwindConfig from '@tailwindConfig'
 const fullConfig = resolveConfig(tailwindConfig)
 
 document.querySelector('#app').innerHTML = `
